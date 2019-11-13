@@ -3,7 +3,7 @@
 mysql_version=5.7.28-1.el7.x86_64
 install_path=/opt
 mysql_psw="Sinvie@123"
-function mysql(){
+function mysqlInstall(){
 # install mysql
 mkdir -p /opt/mysql
 tar -xvf mysql-${mysql_version}.rpm-bundle.tar -C ${install_path}/mysql
@@ -42,3 +42,5 @@ EOF
 mysql -uroot -p"$mysql_psw" -Demplus25 --connect-expired-password -e "source ${install_path}/emplus.sql"
 systemctl restart mysqld
 }
+
+mysqlInstall

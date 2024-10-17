@@ -50,7 +50,7 @@
         <dependency>
             <groupId>org.codehaus.groovy</groupId>
             <artifactId>groovy-all</artifactId>
-            <version>2.5.8</version>
+            <version>2.5.14</version>
             <type>pom</type>
         </dependency>
 
@@ -97,7 +97,7 @@
                         <artifactId>groovy-all</artifactId>
                         <!-- any version of Groovy \>= 1.5.0 should work here -->
                         <!-- 这个变量用来控制groovy编译版本 -->
-                        <version>2.5.8</version>
+                        <version>2.5.14</version>
                         <scope>runtime</scope>
                     </dependency>
                 </dependencies>
